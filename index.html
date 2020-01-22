@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <title>Crystal Game</title>
+  </head>
+  <body>
+    
+
+    <div class="container">
+        <div class="col"></div>
+        <div class="row justify-content-md-center">
+            <h1>Crystal Game</h1>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <h2>Instructions:</h2>
+        </div>
+
+        <div class="row justify-content-md-center">
+
+            <p>
+                You will be given a random number at the start of this game.
+                There are four crystals below. 
+                By clicking on a crystal, you will add a specific number of points to your total score.
+                You win the game by matching your total score to the random number.
+                You lose the game if your score goes above the random number.
+                The value of each crystal is hidden from you until you click on it.
+                Each time when the game starts, the game will change the values of each crystal.
+            </p>
+        </div>         
+    </div>
+        
+    <br>
+    <br>
+
+    <div class="row justify-content-md-center bg-info text-white">
+
+        <div class="col-totalscore">
+            <div>Current Score:</div>
+            <br>
+            <div id="currentscore">0</div>
+            <div class="wins-loss">
+                <p>Wins:</p>
+                <p id="wins">0</p>
+                <p>Losses:</p>
+                <p id="loss">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center bg-warning text-dark">
+        <div class="compguess">
+            <p>Random Computer Choice:</p>
+            <p id="computerChoice">0</p>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center bg-secondary text-white">
+        <div class="crystals">
+            <button id="red" class=""><img src="images\red.jpg" width="200" height="200" alt=""></button>
+            <button id="blue" class=""><img src="images\blue.jpg" width="200" height="200" alt=""></button>
+            <button id="green" class=""><img src="images\green.jpg" width="200" height="200" alt=""></button>
+            <button id="yellow" class=""><img src="images\yellow.jpg" width="200" height="200" alt=""></button>
+        </div>
+    </div>
+
+    
+    
+    <script type="text/javascript" src="assets\js.js"></script>
+ 
+  </body>
+</html>
